@@ -1,0 +1,318 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2f3640;
+    padding: 30px 20px;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4e73df;
+}
+
+/* Content Area */
+.content {
+    flex-grow: 1;
+    width: 70%;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 250px; /* untuk memberi ruang sidebar */
+    border-radius: 8px;
+    position: relative;
+}
+
+h1 {
+    font-size: 28px;
+    color: #2f3640;
+    margin-bottom: 20px;
+}
+
+/* Tabel Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #4e73df;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td a {
+    color: #e74a3b;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+td a:hover {
+    color: #e44a3b;
+}
+
+/* Form Styling */
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #2f3640;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #4e73df;
+}
+
+button {
+    background-color: #4e73df;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #375aab;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Login Form */
+.login-container,
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+
+.login-container h2,
+.register-container h2 {
+    font-size: 28px;
+    color: #2f3640;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-container form,
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+a {
+    color: #4e73df;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding: 20px;
+    }
+
+    .content {
+        margin-left: 60px;
+    }
+
+    .sidebar ul li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .login-container,
+    .register-container {
+        max-width: 90%;
+    }
+
+    table,
+    td,
+    th {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    li:hover {
+        background-color: #10eed0;
+      }
+    
+    /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Styling the Table */
+table.price-list {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+table.price-list th, table.price-list td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table.price-list th {
+    background-color: #3498db;
+    color: white;
+}
+
+table.price-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table.price-list tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* Formatting the Prices */
+table.price-list td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    table.price-list th, table.price-list td {
+        font-size: 14px;
+    }
+}
+
+}
